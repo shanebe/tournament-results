@@ -2,7 +2,6 @@
 # 
 # tournament.py -- implementation of a Swiss-system tournament
 #
-import sys
 import psycopg2
 
 def connect():
