@@ -66,6 +66,9 @@ def playerStandings():
         wins: the number of matches the player has won
         matches: the number of matches the player has played
     """
+    # Selecting Player ID, Name and aggregate count of matches, left joined on matches with players.id, grouped as players.id and ordered 
+    # by number of matches descending 
+    
     query = """
     select players.id, name, count(matches.id) as {group}
         from players left join matches
