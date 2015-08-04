@@ -41,15 +41,15 @@ To log in to your machine
 
 - You are now ready to run the Tournament Test python file!
 
-> python tournament_test
+> python tournament_test.py
 
-- Expected results are as follows:
+# Results
 
-Old matches can be deleted.
-Player records can be deleted.
-After deleting, countPlayers() returns zero.
-After registering a player, countPlayers() returns 1.
-Players can be registered and deleted.
-Newly registered players appear in the standings with no matches.
-After a match, players have updated standings.
-After one match, players with one win are paired.
+- Old matches can be deleted.
+- Player records can be deleted.
+- After deleting, countPlayers() returns zero.
+- After registering a player, countPlayers() returns 1.
+- Players can be registered and deleted.
+- Newly registered players appear in the standings with no matches.
+- After a match, players have updated standings.
+- After one match, players with one win are paired.
