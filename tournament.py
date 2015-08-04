@@ -3,6 +3,7 @@
 # tournament.py -- implementation of a Swiss-system tournament
 #
 import psycopg2
+import sys
 
 def connect():
     """Connect to the PostgreSQL database.  Returns a database connection."""
