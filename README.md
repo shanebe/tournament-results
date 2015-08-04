@@ -8,7 +8,7 @@ VirtualBox is the software that actually runs the VM. You can download it from v
 - Install Vagrant
 Vagrant is the software that configures the VM and lets you share files between your host computer and the VM's filesystem.  You can download it from vagrantup.com, <a href="https://www.vagrantup.com/downloads">here</a>. Install the version for your operating system.
 
-- Clone the Vagrant VM COnfiguration from GitHub
+- Clone the Vagrant VM Configuration from GitHub
 
 > git clone http://github.com/udacity/fullstack-nanodegree-vm fullstack
 
