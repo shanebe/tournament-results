@@ -32,11 +32,24 @@ To log in to your machine
 - Once logged into your vagrant environment, clone the project 
 
 > git clone https://github.com/shanebe/tournament-results.git
-- tournament.sql is where you will put the database schema, in the form of SQL create table commands
-- tournament.py is where you will put the code for your tournament module.
-- tournament_test.py contains test functions that will test the functions you’ve written in intournament.py
 
-To run the series of tests defined in this test suite, run the program from the command line 
+- Move into this folder and use PSQL to import the database SQL file
+
+> psql
+
+> \i tournament.sql
+
+- You are now ready to run the Tournament Test python file!
+
 > python tournament_test
 
+- Expected results are as follows:
 
+Old matches can be deleted.
+Player records can be deleted.
+After deleting, countPlayers() returns zero.
+After registering a player, countPlayers() returns 1.
+Players can be registered and deleted.
+Newly registered players appear in the standings with no matches.
+After a match, players have updated standings.
+After one match, players with one win are paired.
