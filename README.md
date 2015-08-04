@@ -13,12 +13,17 @@ git clone http://github.com/udacity/fullstack-nanodegree-vm fullstack
 
 - Boot up and log into the Virtual Machine
 Using the terminal, change directory to fullstack/vagrant 
+
 > cd fullstack/vagrant
+
 then type 
+
 > vagrant up 
+
 to launch your virtual machine.
 
 To log in to your machine 
+
 > vagrant ssh
 
 - tournament.sql is where you will put the database schema, in the form of SQL create table commands
