@@ -120,11 +120,12 @@ def swissPairings():
         name2: the second player's name
     """
 
+    # Determine nearly requal win records with player adjacent to them in standings
     standings = [(data[0], data[1]) for data in playerStandings()]
-    #if len(standings) < 2:
-    #    raise KeyError("Looks like we dont have enough players, bring someone on board.")
     left = standings[0::2]
     right = standings[1::2]
+    
+    # Return a list of tuples
     pairings = zip(left, right)
 
     # flatten the pairings and convert back to a tuple
