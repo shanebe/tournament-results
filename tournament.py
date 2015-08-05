@@ -83,7 +83,7 @@ def playerStandings():
     join = """
     select winners.id, winners.name, wins, wins+losses as matches
         from ({wins}) as winners left join ({losses}) as losers
-            on winners.id = losers.id;
+            on winners.id = losers.id ORDER by wins DESC;
     """.format(wins=wins, losses=losses)
 
     DB = connect()
