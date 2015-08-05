@@ -39,6 +39,11 @@ To log in to your machine
 
 > \i tournament.sql
 
+Followed by 
+> \q
+
+to quit.
+
 - You are now ready to run the Tournament Test python file!
 
 > python tournament_test.py
