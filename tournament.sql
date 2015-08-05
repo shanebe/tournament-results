@@ -10,6 +10,10 @@
 
 DROP DATABASE IF EXISTS tournament;
 CREATE DATABASE tournament;
+
+-- Connect to the database
+\c tournament;
+
 -- Players table used for unique player id (primary ket), name and date created 
 CREATE TABLE players (id serial primary key,
                       name text not null,
