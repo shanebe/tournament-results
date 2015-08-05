@@ -15,14 +15,14 @@ CREATE DATABASE tournament;
 \c tournament;
 
 -- Players table used for unique player id (primary ket), name and date created 
-CREATE TABLE players (id serial primary key,
-                      name text not null,
-                      created_at timestamp default current_timestamp);
+CREATE TABLE players (id SERIAL PRIMARY KEY,
+                      name TEXT NOT NULL,
+                      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
 
 -- Matches table, holds match id, winner and loser information (related to player id from players table)
-CREATE TABLE matches (id serial primary key,
-                      winner int,
-                      loser int,
-                      foreign key (winner) references players(id),
-                      foreign key (loser) references players(id));
+CREATE TABLE matches (id SERIAL PRIMARY KEY,
+                      winner INT,
+                      loser INT,
+                      FOREIGN KEY (winner) REFERENCES players(id),
+                      FOREIGN KEY (loser) REFERENCES players(id));
